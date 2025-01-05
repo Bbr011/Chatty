@@ -1,6 +1,6 @@
 import Usermodel from "../models/usermodel.js";
 import bcrypt from "bcryptjs";
-import generateTokens from "../tools/generatetokens.js";
+import generateTokens from "../../frontend_section/tools/generatetokens.js";
 
 
 export const login = async(req, res) => {
