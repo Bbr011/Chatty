@@ -29,7 +29,7 @@ const userschema = new mongoose.Schema({
         type: String,
         default: "",
     }
-});
+}, {timestamps: true}); //timestamps (creted_at and modified_at)
 
 const Usermodel = mongoose.model("User", userschema);
 
