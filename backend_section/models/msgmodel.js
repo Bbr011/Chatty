@@ -21,5 +21,5 @@ const msgschema = new mongoose.Schema({
 
 }, {timestamps: true});
 
-const Msg = mongoose.model("Message", msgschema);
+const Msg = mongoose.model("Msg", msgschema);
 export default Msg;
