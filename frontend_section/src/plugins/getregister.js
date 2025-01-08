@@ -56,5 +56,5 @@ function handleErrors({name, username, password, confirmpassword, sex}){
         toast.error("Password must be at least 6 characters long.")
         return false
     }
-    return true
+    return true;
 }
