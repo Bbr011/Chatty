@@ -28,7 +28,7 @@ const Getlogout = () => {
         }
     }
 
-    return {loading, logout}
+    return {loading, logout};
 }
 
 export default Getlogout
