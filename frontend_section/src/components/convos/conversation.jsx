@@ -1,15 +1,19 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
 import Messages from './messages'
 import Messagesinput from './messagesinput'
+import ShowConvos from '../../zustand/showconvos'
 
 const Conversation = () => {
-    const nochatselected = true;
+    const {selectedconvo, setselectedconvo} = ShowConvos();
+    useEffect(() => {
+        return () => setselectedconvo(null);
+    }, [setselectedconvo]);
     return (
         <div className='md:min-w-[600px] flex flex-col'>
-            {nochatselected ? (<NoChatSelected />) : (
+            {!selectedconvo ? (<NoChatSelected />) : (
                 <>
                     <div className='backdrop-blur-3xl px-4 py-4 mb-2'>
-                        <span className='text-white font-bold'>User Name</span>
+                        <span className='text-white font-bold'>{selectedconvo.name}</span>
                     </div>
 
                     <Messages />
