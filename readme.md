@@ -13,7 +13,7 @@ This project is a real-time chat application built to facilitate seamless commun
 
 ## Technologies Used
 ### Frontend:
-- **React**: For building the user interface.
+- **React and DaisyUI**: For building the user interface.
 - **Zustand**: Lightweight state management for handling application state.
 - **React-Icons**: Iconography for better user experience.
 - **React-Hot-Toast**: Notifications and alerts for user actions.
