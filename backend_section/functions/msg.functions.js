@@ -1,5 +1,7 @@
 import Convo from "../models/convomodel.js";
 import Msg from "../models/msgmodel.js";
+import {recieversocketid} from "../socket/socket.js";
+import {io} from "../socket/socket.js";
 
 export const sendmessage = async (req, res) => {
     try{
@@ -29,9 +31,12 @@ export const sendmessage = async (req, res) => {
             conversation.messages.push(newmsg._id);
         }
 
-        //socketio
-
         await Promise.all([conversation.save(), newmsg.save()]);        //save the conversation and append new message to the conversation
+
+        const Rsocketid = recieversocketid(receiverID);
+        if(Rsocketid){
+            io.to(Rsocketid).emit("newmsg", newmsg);
+        }
 
         res.status(201).json(newmsg);
 
