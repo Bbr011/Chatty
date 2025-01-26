@@ -81,6 +81,3 @@ project-directory/
 - **Hamza Khadraoui** - Full-Stack Developer
 - **Youssef Nassib** - Full-Stack Developer
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
