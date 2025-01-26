@@ -5,17 +5,18 @@ import authiroutes from './routes/authi.routes.js';
 import msgroutes from './routes/msg.routes.js';
 import userroutes from './routes/user.routes.js';
 import connection from './db/connection.js';
+import { application, server } from './socket/socket.js';
+
 
 
 const PORT = process.env.PORT || 5000;
-const application = express();
 
 dotenv.config();
 
 application.use(express.json());
 application.use(cookieParser());
 
-application.listen(PORT, () => {
+server.listen(PORT, () => {
     connection();
     console.log(`running on port ${PORT}`);
 });
