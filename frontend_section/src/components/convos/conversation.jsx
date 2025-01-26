@@ -13,7 +13,7 @@ const Conversation = () => {
             {!selectedconvo ? (<NoChatSelected />) : (
                 <>
                     <div className='backdrop-blur-3xl px-4 py-4 mb-2'>
-                        <span className='text-white font-bold'>{selectedconvo.name}</span>
+                        <span className='text-white font-bold'>{selectedconvo.username}</span>
                     </div>
 
                     <Messages />
