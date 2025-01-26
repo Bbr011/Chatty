@@ -20,7 +20,7 @@ const User = ({Convo, lastbox}) => {
 
             <div className='flex flex-col flex-1'>
                 <div className='flex gap-3 justify-between'>
-                    <p className='font-bold text-gray-200'>{Convo.name}</p>
+                    <p className='font-bold text-gray-200'>{Convo.username}</p>
                 </div>
             </div>
         </div>
