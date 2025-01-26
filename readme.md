@@ -58,8 +58,8 @@ project-directory/
    npm install
    ```
 3. Start the development servers:
-   - Frontend: `npm start` (default: http://localhost:5173)
-   - Backend: `npm run dev` (default: http://localhost:5000)
+   - Frontend: `npm run dev` (default: http://localhost:5173)
+   - Backend: `npm run index` (default: http://localhost:5000)
 
 ## Usage
 1. Launch both the frontend and backend servers.
