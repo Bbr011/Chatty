@@ -14,7 +14,7 @@ const Searchbar = () => {
         if(!search) return;
         if(search.length < 3) return toast.error('Search query must be at least 3 characters long');
         console.log("Search Query: ", search);
-        const searchresult = convos.filter((convo) => convo.name.toLowerCase().includes(search.toLowerCase()));
+        const searchresult = convos.filter((convo) => convo.username.toLowerCase().includes(search.toLowerCase()));
         console.log("Search Result: ", searchresult);
         
 
