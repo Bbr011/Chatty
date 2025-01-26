@@ -2,10 +2,12 @@ import React, { useEffect, useRef } from 'react'
 import Message from './message'
 import Getmessages from '../../plugins/getmessages'
 import MessageSkeleton from '../skeletons/messageloading'
+import Userealtimemsgs from '../../plugins/realtimemsgs'
 
 
 const Messages = () => {
   const {messages, loading} = Getmessages()
+  Userealtimemsgs()
   const lastmsg = useRef()
   useEffect(() => {
     setTimeout(() => {
