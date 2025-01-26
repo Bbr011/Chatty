@@ -1,2 +1,0 @@
-locallink:
-	http://localhost:5173/
