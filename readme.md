@@ -37,6 +37,9 @@ project-directory/
 │   │   ├── plugins/
 │   │   ├── zustand/
 │   │   ├── utils/
+│   │   ├── app.jsx
+│   │   ├── index.css
+│   │   ├── main.jsx
 ├── backend_section/
 │   ├── functions/
 │   ├── models/
@@ -44,6 +47,7 @@ project-directory/
 │   ├── routes/
 │   ├── socket/
 │   ├── tools/
+│   ├── index.js
 ├── public/
 ├── package.json
 etc...
