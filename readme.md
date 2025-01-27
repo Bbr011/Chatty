@@ -48,7 +48,7 @@ project-directory/
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Bbr011/Chatty.git
    ```
 2. Navigate to the project directory and install dependencies for both frontend and backend:
    ```bash
