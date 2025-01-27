@@ -29,20 +29,24 @@ This project is a real-time chat application built to facilitate seamless commun
 ## Project Structure
 ```
 project-directory/
-├── frontend/
+├── frontend_section/
 │   ├── src/
 │   │   ├── components/
 │   │   ├── context/
-│   │   ├── pages/
+│   │   ├── Tabs/
 │   │   ├── plugins/
 │   │   ├── zustand/
-├── backend/
-│   ├── controllers/
+│   │   ├── utils/
+├── backend_section/
+│   ├── functions/
 │   ├── models/
+|   ├── Mware/
 │   ├── routes/
 │   ├── socket/
+│   ├── tools/
 ├── public/
 ├── package.json
+etc...
 ```
 
 ## Installation
@@ -52,9 +56,9 @@ project-directory/
    ```
 2. Navigate to the project directory and install dependencies for both frontend and backend:
    ```bash
-   cd frontend
+   cd frontend_section
    npm install
-   cd ../backend
+   cd ../backend_section
    npm install
    ```
 3. Start the development servers:
